@@ -6,15 +6,50 @@
 
 #green {
     background-color: green;
-    
 }
 
 #yellow {
     background-color: yellow;
-    
 }
 
 #purple {
     background-color: purple;  
 }
 
+#green2 {
+    background-color: green;
+    flex: 1;
+}
+
+#yellow2 {
+    background-color: yellow;
+    flex: 2;
+}
+
+#purple2 {
+    background-color: purple;  
+    flex: 1;
+}
+
+
+.sizeCopy {
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#green3 {
+    background-color: green;
+    flex: 1;
+}
+
+#yellow3 {
+    background-color: yellow;
+    flex: 2;
+}
+
+#purple3 {
+    background-color: purple;  
+    flex: 1;
+}
