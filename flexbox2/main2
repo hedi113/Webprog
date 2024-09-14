@@ -7,11 +7,38 @@
     <link rel="stylesheet" href="code2.css">
 </head>
 <body>
-    <p>1. és 2. feladat</p>
+    <p>1. feladat</p>
     <div class="size">
         <div id="green" class="size itemSize"></div>
         <div id="yellow" class="size itemSize"></div>
         <div id="purple" class="size itemSize"></div>
+    </div>
+    <p>2. feladat</p>
+    <div class="container">
+        <ul>
+            <li id="purple" class="itemSize"></li>
+            <li id="purple" class="itemSize"></li>
+            <li id="purple" class="itemSize"></li>
+            <li id="purple" class="itemSize"></li>
+        </ul>
+    </div>
+    <p>3. feladat</p>
+    <div class="container">
+        <ul id="feladat3">
+            <li id="purple" class="itemSize"></li>
+            <li id="purple" class="itemSize"></li>
+            <li id="purple" class="itemSize"></li>
+            <li id="purple" class="itemSize"></li>
+        </ul>
+    </div>
+    <p>4. feladat</p>
+    <div class="container4">
+        <ul id="feladat4">
+            <li id="purple" class="itemSize"></li>
+            <li id="purple" class="itemSize"></li>
+            <li id="purple" class="itemSize"></li>
+            <li id="purple" class="itemSize"></li>
+        </ul>
     </div>
 </body>
 </html>
