@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3</title>
+</head>
+<style>
+.container {
+    width: 315px;
+    display: inline-grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 5px;
+    margin-top: 50%;
+}
+.container > * {
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+#buttondiv {
+    width: 315px;
+    text-align: center;
+}
+button {
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+}
+#element1 {
+    border-radius: 40px 0px 0px 0px;
+}
+#element3 {
+    border-radius: 0px 40px 0px 0px;
+}
+#element7 {
+    border-radius: 0px 0px 0px 40px;
+}
+#element9 {
+    border-radius: 0px 0px 40px 0px;
+}
+#all {
+    display: grid;
+    place-content: center;
+}
+</style>
+<script>
+    function generateRandomNumbers() {
+        let size = 9;
+        let max = 9;
+        let min = 1;
+        const numbers = [];
+
+        do {
+            let number = Math.floor(Math.random() * (max - min + 1) + min);
+            if(!numbers.includes(number)) {
+            numbers.push(number);
+            }
+        }while (numbers.length < 9)
+
+        for (let i = 0; i < 9; i++) {
+            let id = "element" + (i + 1);
+            document.getElementById(id).innerHTML = `${numbers[i]}`;
+        }
+    }
+
+</script>
+<body>
+    <div id="all">
+    <div class="container">
+        <div id="element1">1</div>
+        <div id="element2">2</div>
+        <div id="element3">3</div>
+        <div id="element4">4</div>
+        <div id="element5">5</div>
+        <div id="element6">6</div>
+        <div id="element7">7</div>
+        <div id="element8">8</div>
+        <div id="element9">9</div>
+    </div>
+
+    <div id="buttondiv">
+    <button id="button" onclick="generateRandomNumbers()">Randomize</button>
+    </div>
+</div>
+</body>
+</html>
